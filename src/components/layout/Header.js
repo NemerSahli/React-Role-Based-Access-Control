@@ -11,16 +11,16 @@ export default class Header extends Component {
            </Link>
            </li>
           <li>
+          <li>
+            <Link to="/SuperAdmin/dashboard"> Super Admin</Link>
+          </li>
             <Link to="/admin/dashboard">Admin </Link>
           </li>
           <li>
-            <Link to="/org/dashboard">Organization </Link>
+            <Link to="/org/dashboard">Organization</Link>
           </li>
           <li>
             <Link to="/user/dashboard">User</Link>
-          </li>
-          <li>
-            <Link to="/SuperAdmin/dashboard"> Super Admin</Link>
           </li>
         </ul>
       </div>

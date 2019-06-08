@@ -4,3 +4,30 @@ input,
 button {
   margin: 10px;
 }
+
+.user-type-button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: orange;
+  cursor: pointer;
+}
+.user-type-button:hover {
+  background-color: rgba(255, 166, 0, 0.85);
+}
+
+ul {
+  background: orange;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 30px;
+  text-decoration-line: none;
+}
+link {
+  text-decoration-line: none;
+}
