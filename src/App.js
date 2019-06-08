@@ -5,11 +5,11 @@ import history from './BrowserHistory/history';
 
 import Authorization from './components/Authorization';
 import Landing from './components/pages/Landing';
-import StuDashboard from './components/pages/StuDashboard';
+import UserDashboard from './components/pages/UserDashboard';
 import AdminDashboard from './components/pages/AdminDashboard';
 import SupAdDashboard from './components/pages/SupAdDashboard';
 import OrgDashboard from './components/pages/OrgDashboard';
-
+import Header from './components/layout/Header';
 import NotFoundPage from './components/layout/NotFoundPage';
 
 class App extends Component {
@@ -17,13 +17,13 @@ class App extends Component {
     return (
       <div className="App">
         {/* write your comment here... */}
-
         <BrowserRouter history={history}>
+          <Header />
           <Switch>
             <Route path="/" component={Landing} exact />
             <Route
-              path="/student/dashboard"
-              component={Authorization(StuDashboard, ['Student'])}
+              path="/user/dashboard"
+              component={Authorization(UserDashboard, ['User'])}
             />
             <Route
               path="/admin/dashboard"
