@@ -15,7 +15,11 @@ import NotFoundPage from './components/layout/NotFoundPage';
 
 class App extends Component {
   state = {
-    userType: 'none'
+    userType: 'none',
+    supAdminAuthDashboards: ['SuperAdmin'],
+    adminAuthDashboards: ['SuperAdmin', 'Admin'],
+    orgAuthDashboards: ['SuperAdmin', 'Admin', 'Organizer'],
+    userAuthDashboards: ['SuperAdmin', 'Admin', 'Organizer', 'User']
   };
   selectUserType = userType => {
     this.setState({
@@ -24,43 +28,62 @@ class App extends Component {
   };
 
   render() {
-    const { userType } = this.state;
+    const {
+      userType,
+      supAdminAuthDashboards,
+      adminAuthDashboards,
+      orgAuthDashboards,
+      userAuthDashboards
+    } = this.state;
     return (
       <div className="App">
         {/* write your comment here... */}
-        <BrowserRouter history={history}>
-          <Login selectUserTypeHandler={this.selectUserType} />
-          LoggedIn user Type: {this.state.userType}
-          <Header userType={''} />
-          <Switch>
-            <Route path="/" component={Landing} exact />
-            <Route
-              path="/SuperAdmin/dashboard"
-              component={Authorization(
-                SupAdDashboard,
-                ['SuperAdmin'],
-                userType
-              )}
-            />
-            <Route
-              path="/admin/dashboard"
-              component={Authorization(AdminDashboard, ['Admin'], userType)}
-            />
-            <Route
-              path="/org/dashboard"
-              component={Authorization(
-                OrgDashboard,
-                ['Organization'],
-                userType
-              )}
-            />
-            <Route
-              path="/user/dashboard"
-              component={Authorization(UserDashboard, ['User'], userType)}
-            />
-            <Route path="" component={NotFoundPage} />
-          </Switch>
-        </BrowserRouter>
+        <div className="container">
+          <BrowserRouter history={history}>
+            <Login selectUserTypeHandler={this.selectUserType} />
+            <h3>LoggedIn user Type: {this.state.userType}</h3>
+            <hr />
+            <h3>Please select one of the following dashboard to check if you are authorized:-</h3>
+
+            <Header userType={''} />
+            <Switch>
+              <Route path="/" component={Landing} exact />
+              <Route
+                path="/SuperAdmin/dashboard"
+                component={Authorization(
+                  SupAdDashboard,
+                  [...supAdminAuthDashboards],
+                  userType
+                )}
+              />
+              <Route
+                path="/admin/dashboard"
+                component={Authorization(
+                  AdminDashboard,
+                  [...adminAuthDashboards],
+                  userType
+                )}
+              />
+              <Route
+                path="/org/dashboard"
+                component={Authorization(
+                  OrgDashboard,
+                  [...orgAuthDashboards],
+                  userType
+                )}
+              />
+              <Route
+                path="/user/dashboard"
+                component={Authorization(
+                  UserDashboard,
+                  [...userAuthDashboards],
+                  userType
+                )}
+              />
+              <Route path="" component={NotFoundPage} />
+            </Switch>
+          </BrowserRouter>
+        </div>
       </div>
     );
   }

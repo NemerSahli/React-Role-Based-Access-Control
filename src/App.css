@@ -4,7 +4,16 @@ input,
 button {
   margin: 10px;
 }
-
+.App{
+  width:80%;
+  margin:0 auto;
+}
+.container{
+  width:80%;
+}
+button{
+  font-weight: 700;
+}
 .user-type-button {
   border: none;
   padding: 10px 20px;

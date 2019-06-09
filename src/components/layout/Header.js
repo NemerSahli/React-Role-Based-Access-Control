@@ -5,19 +5,17 @@ export default class Header extends Component {
     return (
       <div>
         <ul>
-          <li >
-           <Link to="/">
-           Home
-           </Link>
-           </li>
           <li>
-          <li>
-            <Link to="/SuperAdmin/dashboard"> Super Admin</Link>
+            <Link to="/">Home</Link>
           </li>
+          <li>
+            <li>
+              <Link to="/SuperAdmin/dashboard"> Super Admin</Link>
+            </li>
             <Link to="/admin/dashboard">Admin </Link>
           </li>
           <li>
-            <Link to="/org/dashboard">Organization</Link>
+            <Link to="/org/dashboard">Organizer</Link>
           </li>
           <li>
             <Link to="/user/dashboard">User</Link>
