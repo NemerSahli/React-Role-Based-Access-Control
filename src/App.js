@@ -10,6 +10,8 @@ import AdminDashboard from './components/pages/AdminDashboard';
 import SupAdDashboard from './components/pages/SupAdDashboard';
 import OrgDashboard from './components/pages/OrgDashboard';
 import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
+
 import Login from './components/pages/Login';
 import NotFoundPage from './components/layout/NotFoundPage';
 
@@ -36,14 +38,19 @@ class App extends Component {
       userAuthDashboards
     } = this.state;
     return (
+      <div>
       <div className="App">
         {/* write your comment here... */}
         <div className="container">
           <BrowserRouter history={history}>
+            <h1>React Role Based Access Control</h1>
             <Login selectUserTypeHandler={this.selectUserType} />
             <h3>LoggedIn user Type: {this.state.userType}</h3>
             <hr />
-            <h3>Please select one of the following dashboard to check if you are authorized:-</h3>
+            <h3>
+              Please select one of the following dashboard to check if you are
+              authorized:-
+            </h3>
 
             <Header userType={''} />
             <Switch>
@@ -85,6 +92,8 @@ class App extends Component {
           </BrowserRouter>
         </div>
       </div>
+            <Footer />
+            </div>
     );
   }
 }

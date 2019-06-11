@@ -35,7 +35,7 @@ export default class Login extends Component {
           Normally there is only one button to login and no need to choose which
           user type you are, the user type has been saved in the database and
           after login succeeded the JWT containing the userType, then
-          automaticlly showing the dashboard you are able to access.
+          automaticlly showing the dashboard/s you are able to access.
         </p>
       </div>
     );

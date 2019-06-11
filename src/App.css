@@ -1,9 +1,3 @@
-.App,
-div,
-input,
-button {
-  margin: 10px;
-}
 .App {
   width: 80%;
   margin: 0 auto;
@@ -13,6 +7,7 @@ button {
 }
 button {
   font-weight: 700;
+  margin: 10px;
 }
 .user-type-button {
   border: none;
@@ -46,4 +41,24 @@ link {
 .text-note {
   color: black;
   font-weight: 700;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+.footer a {
+  margin: 20px;
+  text-decoration: none;
+  color: white;
+}
+.footer a:visited {
+  color: white;
+}
+.fa-20px{
+  font-size: 20px;
 }
