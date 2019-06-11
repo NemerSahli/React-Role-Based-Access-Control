@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/React-Role-Based-Access-Control/precache-manifest.cba65de567a65c72137928a163c01449.js"
+  "/React-Role-Based-Access-Control/precache-manifest.8f6abaf0368ba6d9ad2db4a6819248bf.js"
 );
 
 workbox.clientsClaim();

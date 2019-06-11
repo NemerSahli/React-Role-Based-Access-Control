@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/React-Role-Based-Access-Control/static/js/runtime~main.84eaec82.js"
   },
   {
-    "revision": "6e99802963fcc3faa2b2",
-    "url": "/React-Role-Based-Access-Control/static/js/main.6e998029.chunk.js"
+    "revision": "b54bdedb6957712d5f77",
+    "url": "/React-Role-Based-Access-Control/static/js/main.b54bdedb.chunk.js"
   },
   {
     "revision": "0464a1ced15175e7c048",
     "url": "/React-Role-Based-Access-Control/static/js/1.0464a1ce.chunk.js"
   },
   {
-    "revision": "6e99802963fcc3faa2b2",
-    "url": "/React-Role-Based-Access-Control/static/css/main.84b67421.chunk.css"
+    "revision": "b54bdedb6957712d5f77",
+    "url": "/React-Role-Based-Access-Control/static/css/main.7c4ad23c.chunk.css"
   },
   {
-    "revision": "0a8a55a29a5de5de4b3f79e7ceb58ee0",
+    "revision": "afbdd6b7734307c0bd1d1886c5199d7e",
     "url": "/React-Role-Based-Access-Control/index.html"
   }
 ];
