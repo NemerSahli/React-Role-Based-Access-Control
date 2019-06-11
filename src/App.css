@@ -4,14 +4,14 @@ input,
 button {
   margin: 10px;
 }
-.App{
-  width:80%;
-  margin:0 auto;
+.App {
+  width: 80%;
+  margin: 0 auto;
 }
-.container{
-  width:80%;
+.container {
+  width: 80%;
 }
-button{
+button {
   font-weight: 700;
 }
 .user-type-button {
@@ -39,4 +39,11 @@ li {
 }
 link {
   text-decoration-line: none;
+}
+.text-muted {
+  color: grey;
+}
+.text-note {
+  color: black;
+  font-weight: 700;
 }
