@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/React-route-admin-user/precache-manifest.71ecc934afdff30c1e83ec262e9760bc.js"
+  "/React-Role-Based-Access-Control/precache-manifest.cba65de567a65c72137928a163c01449.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/React-route-admin-user/index.html", {
+workbox.routing.registerNavigationRoute("/React-Role-Based-Access-Control/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
