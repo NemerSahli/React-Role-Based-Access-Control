@@ -1,6 +1,6 @@
 # React-Role-Based-Access-Control
 
-I added an `Authorization` for access control a different dashboards. So you just pass the component, and the allowed role to the Authorization HOC.I assume your user has a property `userType`.
+I added an `Authorization` for access control a different dashboards. So you just pass the component, and the allowed role to the Authorization HOC.I assume the user has a property `userType`.
 
 - Super admin is able to access the all dashboards.
 - Admin is able to access Admin, Organizer and User dashboards.
